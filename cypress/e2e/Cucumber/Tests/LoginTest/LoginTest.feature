@@ -1,11 +1,17 @@
-Feature: I want to login into the site with valid data
+#language: pt
 
-  Background: Navigate to the Website
-    Given I navigate to the Website
+Funcionalidade: Quero fazer login no site com dados válidos
 
-  Scenario: Login as new sign up user with valid data
-    When I entered valid credential
-      | email                  | validpassword |
-      | lambdatest11@yopmail.com | lambdatest21    |
-    And User click on sign in button
-    Then Validate the title after login
+Contexto: Navegar para o Site
+
+
+Cenário: Fazer login como novo usuário cadastrado com dados válidos
+Dado acessei a pagina
+Quando preencho com o valor Cpf o campo Cpf
+| Cpf         | 
+| 10470038993 | 
+E preencho com o valor Senha o campo Senha 
+| Senha       | 
+| euamovc1912 | 
+E clico no botão Entrar
+Então a pagina home deverá ser exibida

@@ -1,20 +1,32 @@
 class LoginPage {
     enterURL() {
      cy.visit(
-       "https://ecommerce-playground.lambdatest.io/index.php?route=account/login"
+      'https://erp-homologacao.viasoft.com.br/pt'
      );
    }
-    enterUserNamePassword(username, password) {
-     cy.get('[id="input-email"]').type(username);
-     cy.get('[id="input-password"]').type(password);
+    InserirCpf(Cpf) {
+     cy.get('#username')
+     .focus()
+     .type(Cpf)
+     return this;
+    }
+
+
+    InserirSenha(Senha) {
+     cy.get('#password')
+     .focus()
+     .type(Senha);
      return this;
    }
-    clickSubmitButton() {
-     cy.get('[type="submit"]').eq(0).click();
+   
+    ClicarnobotãoEntrar() {
+     cy.get('.login-form')
+     .submit();
      return this;
    }
-    verifyPageTitle() {
-     return cy.title().should("eq", "Search -");
+    Validarpaginahome() {
+    cy.get('#topo')
+     .should('exist');
    }
  }
  const login = new LoginPage();
