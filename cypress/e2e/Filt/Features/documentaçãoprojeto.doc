@@ -1,0 +1,6 @@
+A pasta cypress/e2e/Filt/Features possui Sub-pastas com os nomes dos Menus/Sub-menus da aplicação. 
+Dentro dessas Sub-pastas os arquivos são divididos em .feature, Steps.js, Actions.js 
+
+.Feature: Contem os Cenarios escritos em linguagem natural (Gherkin), esses são os arquivos que são lidos pelo cypress
+
+.Actions: Contem as ações axecutadas em um ou mais cenários 
