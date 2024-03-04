@@ -13,7 +13,5 @@ Cypress.Commands.add('RealizarLogin', () => {
       .submit();
       cy.get('#topo')
       .should('exist');
-
-      cy.visit('/')
     });
   });

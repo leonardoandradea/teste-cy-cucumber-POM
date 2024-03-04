@@ -9,7 +9,7 @@ Contexto:
 # E que cliquei no Sub-menu 'Usuários'
 # E que cliquei no Sub-menu 'Usuários'
 Dado acessei o sistema
-
+Quando clico no menu 'Cadastros'
 
 Cenário: Inclusão de Usuário
 # Dado acessei a pagina de Usuario 
