@@ -3,16 +3,14 @@
 Funcionalidade: Cadastro de Usuario
 
 Contexto: 
-# Dado que fiz o login no sistema 
-# Quando clico no menu 'Homepage' 
-# E que cliquei no Sub-menu ''
-# E que cliquei no Sub-menu 'Usuários'
-# E que cliquei no Sub-menu 'Usuários'
+
 Dado acessei o sistema
 Quando clico no menu 'Cadastros'
+E clico no submenu 'Pessoas'
+E clico no SubSubMenu 'Pessoa'
 
 Cenário: Inclusão de Usuário
-# Dado acessei a pagina de Usuario 
+Dado acessei a pagina de Inclusão de pessoa 
 # Quando clico no botão 'Novo' 
 # E preencho com o valor 'CPFVALIDO' o campo 'CPF' 
 # E preencho com o valor 'Leonardo bacanudo' o campo 'Nome'
