@@ -7,8 +7,8 @@ module.exports = defineConfig({
       on("file:preprocessor", cucumber());
     },
     
-      baseUrl: "https://erp-homologacao.viasoft.com.br/pt"
-  
+      baseUrl: "https://erp-homologacao.viasoft.com.br/pt",
+      defaultCommandTimeout: 10000
     
   },
 });

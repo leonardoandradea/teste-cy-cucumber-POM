@@ -4,11 +4,11 @@ Cypress.Commands.add('RealizarLogin', () => {
 
       cy.get('#username')
       .focus()
-      .type('10470038993');
+      .type('353.790.600-56');
 
       cy.get('#password')
       .focus()
-      .type('euamovc1912');
+      .type('testefilt123');
       cy.get('.login-form')
       .submit();
       cy.get('#topo')
