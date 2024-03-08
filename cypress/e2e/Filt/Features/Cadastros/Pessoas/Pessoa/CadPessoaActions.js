@@ -1,6 +1,10 @@
 class CadPessoaPage {
-  VerificarPag() {
-    cy.get('.card-grid')
+  PreencherCPF(nome) {
+    cy.get('.col-12')
+    .find('#nome')
+    .focus()
+    .type(nome)
+    return this;
   }}
   
  const CadPessoa = new CadPessoaPage();

@@ -1,4 +1,4 @@
-class CadNewAction {
+class Actioncommons {
     VerificarPag() {
         cy.get('.card-grid')
 
@@ -10,5 +10,5 @@ class CadNewAction {
       .click()
     }}
     
-   const CadNew = new CadNewAction();
-   export default CadNew;
+   const Actioncommon = new Actioncommons();
+   export default Actioncommon;

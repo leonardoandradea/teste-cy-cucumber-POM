@@ -1,12 +1,16 @@
 /// <reference types="cypress" />
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps"
-import CadPessoa from "./CadPessoaActions"
-import CadNew from "../../../ActionsCommons/CadnovoActions";
+import Actioncommon from "../../../ActionsCommons/Actionscommons";
+import CadPessoa from "./CadPessoaActions";
 
 Given("acessei a pagina de Inclusão de pessoa", () => {
-    CadPessoa.VerificarPag();
+    Actioncommon.VerificarPag();
 });
 
 When("clico no botão {string}", (Botão) => {
-    CadNew.Clicar_Novo(Botão);
+    Actioncommon.Clicar_Novo(Botão);
+});
+
+And("preencho com o valor {string} o campo 'nome'", ( nome) => {
+ CadPessoa.PreencherCPF(nome) 
 });

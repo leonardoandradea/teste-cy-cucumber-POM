@@ -12,7 +12,7 @@ E clico no SubSubMenu 'Pessoa'
 Cenário: Inclusão de Usuário
 Dado acessei a pagina de Inclusão de pessoa 
 Quando clico no botão 'Novo' 
-# E preencho com o valor 'CPFVALIDO' o campo 'CPF' 
+E preencho com o valor 'TesteLeo' o campo 'nome' 
 # E preencho com o valor 'Leonardo bacanudo' o campo 'Nome'
 # E preencho com o valor 'Leo bacana' o campo 'Nome de Usuario'
 # E preencho com o valor 'EmailValido' o campo 'E-mail'
