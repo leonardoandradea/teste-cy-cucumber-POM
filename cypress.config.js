@@ -8,7 +8,8 @@ module.exports = defineConfig({
     },
     
       baseUrl: "https://erp-homologacao.viasoft.com.br/pt",
-      defaultCommandTimeout: 10000
+      defaultCommandTimeout: 15000,
+      retries: 2
     
   },
 });
